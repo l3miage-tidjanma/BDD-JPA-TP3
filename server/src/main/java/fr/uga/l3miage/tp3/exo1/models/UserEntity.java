@@ -10,11 +10,11 @@ import javax.validation.constraints.Email;
 import java.util.Set;
 
 @Entity
-@Setter
-@Getter
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
+@Setter                 // permet de générer à la compilation tous les setters
+@Getter                 // permet de générer à la compilation tous les getters
+@Builder                // permet la création d'un builder
+@NoArgsConstructor      // génère un constructeur sans paramètres
+@AllArgsConstructor     // génère un constructeur avec tous les attributs de la classe en paramètres
 public class UserEntity {
     @Id
     private String name;
