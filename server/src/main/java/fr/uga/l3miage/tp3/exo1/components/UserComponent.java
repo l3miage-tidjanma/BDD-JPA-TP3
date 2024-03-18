@@ -60,6 +60,7 @@ public class UserComponent {
         userRepository.deleteById(name);
     }
 
+    /* METHODES */
     public Set<UserEntity> getUserIsInDomain(String domaine){
         return userRepository.findAllByMailContaining(domaine);
     }
